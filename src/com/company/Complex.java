@@ -58,13 +58,19 @@ public class Complex {
 //TODO: Add more imaginary numbers to test//
 
     public static void main(String[] args) {
-        Complex c1= new Complex(3,4);
-        Complex c2= new Complex(5,8);
-        System.out.println(c1.abs());
-        System.out.println(c1.add(c2));
-        System.out.println(c1.add(4.5));
-        System.out.println(c1.multiply(c2));
-        System.out.println(c1.multiply(4.5));
+        Complex c1= new Complex(8.0,6.0);
+        Complex c2= new Complex(9.0,-6.0);
+        Complex c3= new Complex(-1.0,-2.0);
+        Complex c4= new Complex(-0.5,8.0);
+        Complex c5= new Complex(0.3);
+        Complex c6= new Complex(0,-4);
+        System.out.println("complex number "+ c1+" abs is "+c1.abs());
+        System.out.println("complex number "+ c3+" abs is "+c3.abs());
+        System.out.println("complex number "+ c5+" abs is "+c5.abs());
+        System.out.println(c2+" + "+ c3 + " = " + c2.add(c3));
+        System.out.println(c4+" * "+c5+ " = "+c4.multiply(c5));
+        System.out.println(c6+" * "+c1+ " = "+c6.multiply(c1));
+        System.out.println(c3+" + "+ c1 + " = " + c3.add(c1));
 
         // write your code here
     }

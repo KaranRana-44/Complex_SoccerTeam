@@ -32,7 +32,7 @@ public class SoccerTeam {
             other.win++;
         }
     }
-    public int points(){
+    public int getPoints(){
         return 3*this.win+this.tie;
     }
     public void reset(){
@@ -58,10 +58,10 @@ public class SoccerTeam {
         beavers.played(cheetahs, 2,4);
         beavers.played(ducks,9,9);
 
-        System.out.println("aliigator points are:"+alligators.points());
-        System.out.println("beaver points are:"+beavers.points());
-        System.out.println("cheetahs points are:"+cheetahs.points());
-        System.out.println("duck points are:"+ducks.points());
+        System.out.println("aliigator points are:"+alligators.getPoints());
+        System.out.println("beaver points are:"+beavers.getPoints());
+        System.out.println("cheetahs points are:"+cheetahs.getPoints());
+        System.out.println("duck points are:"+ducks.getPoints());
 
         startTournament();
 

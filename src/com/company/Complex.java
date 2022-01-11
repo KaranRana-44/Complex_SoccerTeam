@@ -43,7 +43,7 @@ public class Complex {
     }
 
     public Complex multiply(Complex other){
-        double term1= this.real*other.real-this.imaginary+other.imaginary;
+        double term1= this.real*other.real-this.imaginary*other.imaginary;
         double term2= this.real*other.imaginary+this.imaginary*other.real;
         Complex c= new Complex(term1,term2);
         return c;
@@ -62,13 +62,20 @@ public class Complex {
         Complex c4= new Complex(-0.5,8.0);
         Complex c5= new Complex(0.3);
         Complex c6= new Complex(0,-4);
+        System.out.println("abs");
         System.out.println("complex number "+ c1+" abs is "+c1.abs());
         System.out.println("complex number "+ c3+" abs is "+c3.abs());
         System.out.println("complex number "+ c5+" abs is "+c5.abs());
+        System.out.println("add");
         System.out.println(c2+" + "+ c3 + " = " + c2.add(c3));
+        System.out.println(c2+" + 3.5" + " = " + c2.add(3.5));
+        System.out.println(c3+" + "+ c1 + " = " + c3.add(c1));
+        System.out.println("multiply");
         System.out.println(c4+" * "+c5+ " = "+c4.multiply(c5));
         System.out.println(c6+" * "+c1+ " = "+c6.multiply(c1));
-        System.out.println(c3+" + "+ c1 + " = " + c3.add(c1));
+        System.out.println(c4+" * 2.3" + " = "+c4.multiply(2.3));
+        System.out.println(c6+" * 4.4" + " = "+c6.multiply(4.4));
+
 
         // write your code here
     }

@@ -55,8 +55,6 @@ public class Complex {
         return c;
     }
 
-//TODO: Add more imaginary numbers to test//
-
     public static void main(String[] args) {
         Complex c1= new Complex(8.0,6.0);
         Complex c2= new Complex(9.0,-6.0);
